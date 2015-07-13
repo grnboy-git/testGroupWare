@@ -25,21 +25,21 @@ define("_SMARTY_CONFIG_DIR", _PHP_LIBS_DIR."smarty/configs/");
 define("_SMARTY_CACHE_DIR", _PHP_LIBS_DIR."smarty/cache/");
 
 // load file
-require_once("HTML/QuickForm.php");
-require_once("HTML/QuickForm/Renderer/ArraySmarty.php");
-require_once(_SMARTY_LIBS_DIR."Smarty.class.php");
+// require_once("HTML/QuickForm.php");
+// require_once("HTML/QuickForm/Renderer/ArraySmarty.php");
+// require_once(_SMARTY_LIBS_DIR."Smarty.class.php");
 
-// load class
-require_once("_CLASS_DIR"."BaseController.php");
-require_once("_CLASS_DIR"."BaseModel.php");
-require_once("_CLASS_DIR"."Auth.php");
-require_once("_CLASS_DIR"."KenController.php");
-require_once("_CLASS_DIR"."KenModel.php");
-require_once("_CLASS_DIR"."MemberController.php");
-require_once("_CLASS_DIR"."MemberModel.php");
-require_once("_CLASS_DIR"."PrememberController.php");
-require_once("_CLASS_DIR"."PrememberModel.php");
-require_once("_CLASS_DIR"."SystemController.php");
-require_once("_CLASS_DIR"."SystemModel.php");
+// // load class
+// require_once("_CLASS_DIR"."BaseController.php");
+// require_once("_CLASS_DIR"."BaseModel.php");
+// require_once("_CLASS_DIR"."Auth.php");
+// require_once("_CLASS_DIR"."KenController.php");
+// require_once("_CLASS_DIR"."KenModel.php");
+// require_once("_CLASS_DIR"."MemberController.php");
+// require_once("_CLASS_DIR"."MemberModel.php");
+// require_once("_CLASS_DIR"."PrememberController.php");
+// require_once("_CLASS_DIR"."PrememberModel.php");
+// require_once("_CLASS_DIR"."SystemController.php");
+// require_once("_CLASS_DIR"."SystemModel.php");
 
 ?>

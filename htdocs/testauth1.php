@@ -3,7 +3,7 @@ define('_ROOT_DIR',__DIR__.'/');
 require_once _ROOT_DIR.'../php_libs/init.php';
 
 $smarty = new Smarty;
-$smarty->template_dir = _SMARTYTEMPLATES_DIR;
+$smarty->template_dir = _SMARTY_TEMPLATES_DIR;
 $smarty->compile_dir = _SMARTY_TEMPLATES_C_DIR;
 $smarty->config_dir = _SMARTY_CONFIG_DIR;
 $smarty->cache_dir = _SMARTY_CACHE_DIR;
@@ -11,12 +11,12 @@ $smarty->cache_dir = _SMARTY_CACHE_DIR;
 session_start();
 
 if (!empty($_POST['type']) && $_POST['type'] == 'authenticate') {
-	// 認証
-	if ($_POST['username'] == 'user' && $_POST['password'] == 'pass') {
-		$_SESSION['id'] = 1;
-	}
-}else if (!empty($_GET['type'] && $_GET['type']) == 'logout') {
-	$_SETTION = [];
+    // 認証
+    if ($_POST['username'] == 'user' && $_POST['password'] == 'pass') {
+        $_SESSION['id'] = 1;
+    }
+}else if (!empty($_GET['type']) && $_GET['type'] == 'logout') {
+    $_SESSION = [];
 }
 
 if(!empty($_SESSION) && $_SESSION['id'] >= 1) {
